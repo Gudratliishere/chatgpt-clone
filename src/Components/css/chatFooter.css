@@ -1,0 +1,35 @@
+.chat-footer {
+    margin-top: auto;
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+}
+
+.input {
+    padding: 0.5rem;
+    background: rgba(28, 30, 58, 1);
+    display: flex;
+    align-items: center;
+    border-radius: 0.5rem;
+    width: 50%;
+    height: 50px;
+}
+
+.input>input {
+    width: calc(100% - 3rem);
+    outline: none;
+    pad: 1.25rem;
+    color: white;
+}
+
+.input>input,
+.send {
+    background: transparent;
+    border: none;
+}
+
+.chat-footer>p {
+    margin: 2rem 0;
+}

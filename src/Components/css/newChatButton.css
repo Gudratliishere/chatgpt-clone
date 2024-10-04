@@ -1,0 +1,19 @@
+.add-btn {
+    height: 2rem;
+    padding-right: 1rem;
+  }
+  
+  .mid-btn {
+    background: #5A4BFF;
+    border: none;
+    color: white;
+    padding: 1.5rem;
+    font-size: 1.5rem;
+    width: 25rem;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin: 0 auto;
+    margin-bottom: 3rem;
+    border-radius: 0.5rem;
+  }

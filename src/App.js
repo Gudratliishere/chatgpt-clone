@@ -1,23 +1,41 @@
-import logo from './logo.svg';
+import { useState } from 'react';
 import './App.css';
+import Main from './Components/Main';
+import Sidebar from './Components/Sidebar';
 
 function App() {
+  const [messages, setMessages] = useState([
+    {
+      text: "Hi, I'm chat gpt!",
+      isBot: true
+    }
+  ])
+
+  const handleSend = async (message) => {
+    setMessages([...messages, {
+      text: message,
+      isBot: false
+    }])
+
+    await timeout(500);
+
+    setMessages([...messages, {
+      text: message,
+      isBot: false
+    }, {
+      text: "Hello! Chat GPT is not working now!",
+      isBot: true
+    }])
+  }
+
+  function timeout(delay) {
+    return new Promise(res => setTimeout(res, delay));
+  }
+
   return (
     <div className="App">
-      <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          Edit <code>src/App.js</code> and save to reload.
-        </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
-      </header>
+      <Sidebar handleSend={handleSend} />
+      <Main messages={messages} handleSend={handleSend} />
     </div>
   );
 }
