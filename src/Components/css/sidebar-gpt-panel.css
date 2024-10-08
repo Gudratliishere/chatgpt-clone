@@ -1,0 +1,42 @@
+.panel {
+    display: flex;
+    flex-direction: column;
+}
+
+.panel>button {
+    margin: 0 10px;
+    display: flex;
+    align-items: center;
+    height: 50px;
+    border-radius: 10px;
+    padding: 10px;
+    color: white;
+    background: transparent;
+    border: none;
+    outline: none;
+}
+
+.panel>button:hover {
+    background: rgba(255, 255, 255, 0.084);
+}
+
+.chat-gpt>span {
+    flex: 15;
+    text-align: left;
+    margin-left: 10px;
+    font-size: 15px;
+}
+
+.chat-gpt>svg {
+    flex: 2;
+}
+
+.gpt-logo-container {
+    border: 1px solid rgba(255, 255, 255, 0.528);
+    padding: 3px;
+    border-radius: 20px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex: 2;
+}

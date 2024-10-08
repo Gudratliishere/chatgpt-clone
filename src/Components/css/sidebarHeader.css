@@ -1,0 +1,26 @@
+.header {
+    display: flex;
+    margin: 15px;
+}
+
+.header>button{
+    border-radius: 10px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 45px;
+    height: 45px;
+    background: transparent;
+    border: none;
+    outline: none;
+    color: rgba(255, 255, 255, 0.762);
+}
+
+.header>button:hover {
+    background: rgba(255, 255, 255, 0.1);
+}
+
+.new-chat-button {
+    justify-content: flex-end;
+    margin-left: auto;
+}

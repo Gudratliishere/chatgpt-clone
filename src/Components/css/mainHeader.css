@@ -1,0 +1,63 @@
+.main-header {
+    width: 100%;
+    display: flex;
+    padding: 12px 20px;
+}
+
+.chat-gpt-logo {
+    justify-content: flex-start;
+    font-size: 20px;
+    display: flex;
+    align-items: center;
+    padding: 0 10px;
+    background: transparent;
+    color: white;
+    border: none;
+    border-radius: 10px;
+}
+
+.chat-gpt-logo:hover {
+    background: #383838;
+}
+
+.profile-buttons {
+    margin-left: auto;
+    justify-content: flex-end;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.profile-button {
+    width: 40px;
+    margin: 0 10px;
+    height: 40px;
+    border: none;
+    outline: none;
+    border-radius: 20px;
+    background: #f39c12;
+    color: white;
+    font-size: 12px;
+    cursor: pointer;
+}
+
+.share-button {
+    width: 80px;
+    height: 40px;
+    border-radius: 20px;
+    background: transparent;
+    color: white;
+    border: 1px solid #414141;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    cursor: pointer;
+}
+
+.share-button:hover {
+    background: #383838;
+}
+
+.share-button>svg {
+    margin-right: 5px;
+}
