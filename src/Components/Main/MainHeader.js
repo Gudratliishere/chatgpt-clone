@@ -1,4 +1,4 @@
-import './css/mainHeader.css'
+import './css/main-header.css'
 
 const MainHeader = () => {
     return (

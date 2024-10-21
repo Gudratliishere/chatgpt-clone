@@ -1,0 +1,28 @@
+.old-chat {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    border-radius: 8px;
+    outline: none;
+    border: none;
+    margin: 1px 0px;
+    padding: 5px 8px 5px 0;
+    background: transparent;
+    color: rgba(255, 255, 255, 0.78);
+}
+
+.old-chat:hover {
+    background-color: rgba(255, 255, 255, 0.065);
+}
+
+span {
+    margin-left: 5px;
+    margin-right: auto;
+    display: block;
+    white-space: nowrap;
+    overflow: hidden;
+}
+
+.old-chat>svg {
+    margin-left: 6px;
+}

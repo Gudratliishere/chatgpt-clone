@@ -4,7 +4,9 @@
     justify-content: center;
     margin: 0 10px;
     border-radius: 7px;
-    padding: 10px 0;
+    padding: 15px;
+    margin-bottom: 0;
+    margin-top: auto;
 }
 
 .upgrade:hover {
@@ -20,10 +22,10 @@
 }
 
 .upgrade-text-title {
-    font-size: 16px;
+    font-size: 13px;
 }
 
 .upgrade-text-body{
-    font-size: 12px;
+    font-size: 11px;
     color: rgba(255, 255, 255, 0.602);
 }

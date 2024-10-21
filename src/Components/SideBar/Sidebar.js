@@ -1,8 +1,7 @@
-import LowerSide from './LowerSide'
 import SidebarFooter from './SidebarFooter'
 import SidebarGptPanel from './SidebarGptPanel'
+import SidebarOldChats from './SidebarOldChats'
 import SiderbarHeader from './SiderbarHeader'
-import UpperSide from './UpperSide'
 import './css/sidebar.css'
 
 const Sidebar = ({ handleSend }) => {
@@ -10,8 +9,7 @@ const Sidebar = ({ handleSend }) => {
         <div className='sidebar'>
             <SiderbarHeader />
             <SidebarGptPanel />
-            <UpperSide handleSend={handleSend} />
-            <LowerSide />
+            <SidebarOldChats />
             <SidebarFooter />
         </div>
     )

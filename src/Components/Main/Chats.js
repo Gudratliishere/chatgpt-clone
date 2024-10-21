@@ -1,6 +1,6 @@
-import userIcon from '../assets/user-icon.png'
 import { useEffect, useRef } from 'react'
 import './css/chats.css'
+
 
 const Chats = ({ messages }) => {
     const messageEnd = useRef(null)

@@ -20,11 +20,10 @@
     background: rgba(255, 255, 255, 0.084);
 }
 
-.chat-gpt>span {
+.chat-gpt>span, .explore-gpt>span {
     flex: 15;
     text-align: left;
     margin-left: 10px;
-    font-size: 15px;
 }
 
 .chat-gpt>svg {
@@ -35,6 +34,14 @@
     border: 1px solid rgba(255, 255, 255, 0.528);
     padding: 3px;
     border-radius: 20px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex: 2;
+}
+
+.explore-gpt>svg{
+    padding: 3px;
     display: flex;
     align-items: center;
     justify-content: center;

@@ -1,5 +1,5 @@
 import { useState } from 'react'
-import './css/chatFooter.css'
+import './css/chat-footer.css'
 
 const ChatFooter = ({ handleSend }) => {
     const [input, setInput] = useState("")

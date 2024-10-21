@@ -1,0 +1,13 @@
+.old-chats {
+    display: flex;
+    flex-direction: column;
+    padding: 20px;
+    overflow: hidden;
+    overflow-y: scroll;
+    scroll-behavior: smooth;
+    height: calc(100vh - 25rem);
+}
+
+.old-chats>span {
+    font-size: 13px;
+}

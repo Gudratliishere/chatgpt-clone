@@ -1,7 +1,7 @@
 import { useState } from 'react';
 import './App.css';
-import Main from './Components/Main';
-import Sidebar from './Components/Sidebar';
+import Main from './Components/Main/Main';
+import Sidebar from './Components/SideBar/Sidebar';
 
 function App() {
   const [messages, setMessages] = useState([

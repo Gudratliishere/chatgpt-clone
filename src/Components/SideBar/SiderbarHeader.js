@@ -1,4 +1,4 @@
-import './css/sidebarHeader.css'
+import './css/sidebar-header.css'
 
 const SiderbarHeader = () => {
   return (
