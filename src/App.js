@@ -7,24 +7,32 @@ function App() {
   const [messages, setMessages] = useState([
     {
       text: "Hi, I'm chat gpt!",
-      isBot: true
+      isBot: true,
+      liked: false,
+      disliked: false
     }
   ])
 
   const handleSend = async (message) => {
     setMessages([...messages, {
       text: message,
-      isBot: false
+      isBot: false,
+      liked: false,
+      disliked: false
     }])
 
     await timeout(500);
 
     setMessages([...messages, {
       text: message,
-      isBot: false
+      isBot: false,
+      liked: false,
+      disliked: false
     }, {
       text: "Hello! Chat GPT is not working now!",
-      isBot: true
+      isBot: true,
+      liked: false,
+      disliked: false
     }])
   }
 

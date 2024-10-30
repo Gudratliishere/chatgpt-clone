@@ -79,6 +79,10 @@
     background-color: #4747477a;
 }
 
+.chat-buttons>button:active{
+    background-color: #696969d5;
+}
+
 .chat-button {
     width: 35px;
     height: 30px;
