@@ -1,13 +1,16 @@
 import SidebarOldChat from "./SidebarOldChat"
 import './css/sidebar-old-chats.css';
 
-const SidebarOldChats = () => {
+const SidebarOldChats = ({ oldMessages, handleOldChatClick }) => {
   return (
     <div className="old-chats">
-      <span>Today</span>
-      <SidebarOldChat />
-      <SidebarOldChat />
-      <SidebarOldChat />
+      <span>Old chats</span>
+      {
+        oldMessages.map((message, index) => (
+          <SidebarOldChat key={index} index={index} 
+            message={message} handleOldChatClick={handleOldChatClick} />
+        ))
+      }
     </div>
   )
 }

@@ -4,6 +4,8 @@ import Main from './Components/Main/Main';
 import Sidebar from './Components/SideBar/Sidebar';
 
 function App() {
+  const [oldMessages, setOldMessages] = useState([])
+
   const [messages, setMessages] = useState([
     {
       text: "Hi, I'm chat gpt!",
@@ -36,13 +38,27 @@ function App() {
     }])
   }
 
+  const handleNewChat = () => {
+    if (messages.length > 0) {
+      setOldMessages([messages, ...oldMessages])
+      setMessages([])
+    }
+  }
+
+  const handleOldChatClick = (index) => {
+    handleNewChat()
+    setMessages(oldMessages[index])
+    setOldMessages(om => om.filter(m => m !== index))
+  }
+
   function timeout(delay) {
     return new Promise(res => setTimeout(res, delay));
   }
 
   return (
     <div className="App">
-      <Sidebar handleSend={handleSend} />
+      <Sidebar handleNewChat={handleNewChat} oldMessages={oldMessages}
+        handleOldChatClick={handleOldChatClick} />
       <Main messages={messages} handleSend={handleSend} />
     </div>
   );
